@@ -1,1 +1,1 @@
-# vscode-background-transparency
+#   Vscode-Background-Transparency
