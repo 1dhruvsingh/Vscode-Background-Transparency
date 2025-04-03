@@ -3,10 +3,10 @@
   "displayName": "Adjustable Background Transparency",
   "description": "Adjust VS Code background transparency with a simple slider",
   "version": "1.0.0",
-  "publisher": "your-publisher-name",
+  "publisher": "DhruvSingh",
   "repository": {
     "type": "git",
-    "url": "https://github.com/1dhruvsingh/vscode-background-transparency"
+    "url": "https://github.com/1dhruvsingh/Vscode-Background-Transparency"
   },
   "engines": {
     "vscode": "^1.60.0"
@@ -45,18 +45,19 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run package",
-    "package": "vsce package",
-    "publish": "vsce publish"
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./",
+    "lint": "eslint .",
+    "package": "@vscode/vsce package",
+    "publish": "@vscode/vsce publish"
   },
   "devDependencies": {
     "@types/node": "^16.0.0",
-    "@types/vscode": "^1.60.0",
     "@vscode/test-electron": "^2.0.0",
-    "vsce": "^2.15.0"
+    "@vscode/vsce": "^2.32.0",
+    "glob": "^9.3.5"
   },
   "dependencies": {
-    "@vscode/vsce": "^3.3.2",
     "fs-extra": "^10.0.0"
   }
 }
